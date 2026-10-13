@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /assets
+Disallow: /account
+Disallow: /admin
+
+Sitemap: https://retro-records.vercel.app/sitemap.xml

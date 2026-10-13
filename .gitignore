@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+.vercel/
+node_modules/
+test-results/
+playwright-report/
+.claude/
+CLAUDE.md
