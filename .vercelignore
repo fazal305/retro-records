@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+tests/
+bin/
+database/
+dev-server.php
+docs/
+.github/
+*.md

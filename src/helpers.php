@@ -33,5 +33,6 @@ function fmt_date(?string $timestamp): string
 
 function asset(string $path): string
 {
-    return '/' . ltrim($path, '/') . '?v=' . App\Config::get('ASSET_VERSION', '1');
+    $version = App\Config::get('ASSET_VERSION') ?? App\Config::get('VERCEL_DEPLOYMENT_ID') ?? App\Config::get('VERCEL_GIT_COMMIT_SHA', '1');
+    return '/' . ltrim($path, '/') . '?v=' . rawurlencode(substr($version, 0, 16));
 }
