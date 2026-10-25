@@ -25,3 +25,5 @@ $description = 'Retro Records is a secure server inventory built with PHP and Po
 <link rel="stylesheet" href="<?= e(asset('css/oldweb-web20.css')) ?>">
 <link rel="stylesheet" href="<?= e(asset('css/app.css')) ?>">
 <script src="<?= e(asset('js/app.js')) ?>" defer></script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
